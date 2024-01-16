@@ -1,0 +1,10 @@
+.app-counter {
+  color: #fff;
+  padding-top: 5px;
+  padding-left: 2px;
+  font-weight: bold;
+}
+.app-counter__length {
+  color: var(--green);
+  font-size: 18px;
+}

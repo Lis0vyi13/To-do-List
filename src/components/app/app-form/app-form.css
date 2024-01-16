@@ -1,0 +1,68 @@
+.app__content {
+  background-color: var(--app-bg);
+  padding: 20px;
+  border-radius: 5px;
+}
+.app__content-form {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--gray-line);
+}
+@media (min-width: 1px) {
+  .app__content-input {
+    width: 100%;
+  }
+  .app__content-form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .app__content-submit-button {
+    width: 100%;
+  }
+}
+@media (min-width: 500px) {
+  .app__content-form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .app__content-submit-button {
+    margin-top: 31px;
+    width: 80px;
+  }
+}
+@media (min-width: 780px) {
+  .app__content-input {
+    width: 305px;
+  }
+}
+@media (min-width: 800px) {
+  .app__content-input {
+    width: 310px;
+  }
+}
+.app__content-label {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.app__content-input {
+  height: 35px;
+  padding-left: 7px;
+  border: none;
+  outline: none;
+}
+.app__content-input:focus {
+  outline: 3px solid var(--green);
+}
+
+.app__content-submit-button {
+  height: 40px;
+}
+.app__content-input,
+.app__content-submit-button {
+  border-radius: 2px;
+}

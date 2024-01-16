@@ -1,0 +1,97 @@
+.app-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  min-height: 100px;
+  background-color: var(--list-item);
+  color: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow-x: hidden;
+  gap: 15px;
+  left: 0;
+  top: 0;
+}
+.app-list-item-info {
+  max-width: 80%;
+}
+.app-list-item-title,
+.app-list-item-description {
+  text-transform: capitalize;
+  overflow-wrap: break-word;
+}
+
+.app-list-item-title {
+  color: var(--green);
+}
+.app-list-item-description,
+.app-list-item-time {
+  font-weight: 500;
+  color: var(--description);
+}
+.app-list-item-time {
+  margin-top: 5px;
+}
+.app-list-item-buttons {
+  display: flex;
+}
+.app-list-item-remove,
+.app-list-item-accept {
+  display: inline-block;
+  cursor: pointer;
+}
+.app-list-item-remove svg,
+.app-list-item-accept svg {
+  transition: all 0.3s ease;
+}
+
+.app-list-item-accept-svg {
+  fill: none;
+  transition: all 0.3s ease;
+  stroke: #05bf6a;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+.app-list-item-remove:hover svg {
+  fill: #b30c0c;
+}
+
+.app-list-item-accept:hover .app-list-item-accept-svg {
+  stroke: var(--green-hover);
+}
+
+@media (min-width: 1px) {
+  .app-list-item-remove svg,
+  .app-list-item-accept svg {
+    height: 24px;
+    width: 24px;
+  }
+  .app-list-item-buttons {
+    gap: 10px;
+  }
+  .app-list-item-title {
+    font-size: 1.25rem;
+  }
+  .app-list-item-description {
+    font-size: 0.92rem;
+  }
+}
+@media (min-width: 500px) {
+  .app-list-item-remove svg,
+  .app-list-item-accept svg {
+    height: 32px;
+    width: 32px;
+  }
+  .app-list-item-buttons {
+    gap: 20px;
+  }
+  .app-list-item-title {
+    font-size: 1.5rem;
+  }
+  .app-list-item-description {
+    font-size: 1.17rem;
+  }
+}
